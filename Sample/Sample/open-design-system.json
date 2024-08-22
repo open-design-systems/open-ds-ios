@@ -1121,7 +1121,7 @@
             "borderRadius": 5,
             "borderWidth": 1,
             "boxShadow": {
-                "$ref": "shadows.elevation1",
+                "$ref": "shadows.level5",
                 "$refType": "shadows"
             },
             "backgroundColor": {
@@ -1133,7 +1133,7 @@
     "shadows": {
         "level5": {
             "meta": {
-                "id": "shadows.elevation1",
+                "id": "shadows.level5",
                 "name": "level5",
                 "description": ""
             },
@@ -1149,7 +1149,7 @@
             },
             "shadowRadius": 1
         },
-        "leve4": {
+        "level4": {
             "meta": {
                 "id": "shadows.elevation2",
                 "name": "leve4",
