@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,8 +12,7 @@
 		362F57E82C4308E7006537F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 362F57E72C4308E7006537F7 /* Assets.xcassets */; };
 		362F57EB2C4308E7006537F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 362F57EA2C4308E7006537F7 /* Preview Assets.xcassets */; };
 		362F57F52C43110E006537F7 /* open-design-system.json in Resources */ = {isa = PBXBuildFile; fileRef = 362F57F42C43110E006537F7 /* open-design-system.json */; };
-		369ED7DF2C6C13EC00198974 /* OpenDesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 369ED7DE2C6C13EC00198974 /* OpenDesignSystem */; };
-		369ED7E22C6C141C00198974 /* OpenDesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 369ED7E12C6C141C00198974 /* OpenDesignSystem */; };
+		363868B72C77F25E00FA6FEA /* OpenDSGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363868B62C77F25E00FA6FEA /* OpenDSGenerated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +22,7 @@
 		362F57E72C4308E7006537F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		362F57EA2C4308E7006537F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		362F57F42C43110E006537F7 /* open-design-system.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "open-design-system.json"; sourceTree = "<group>"; };
+		363868B62C77F25E00FA6FEA /* OpenDSGenerated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenDSGenerated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,8 +30,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				369ED7E22C6C141C00198974 /* OpenDesignSystem in Frameworks */,
-				369ED7DF2C6C13EC00198974 /* OpenDesignSystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +55,7 @@
 		362F57E22C4308E5006537F7 /* Sample */ = {
 			isa = PBXGroup;
 			children = (
+				363868B62C77F25E00FA6FEA /* OpenDSGenerated.swift */,
 				362F57F42C43110E006537F7 /* open-design-system.json */,
 				362F57E32C4308E5006537F7 /* SampleApp.swift */,
 				362F57E52C4308E5006537F7 /* ContentView.swift */,
@@ -91,8 +90,6 @@
 			);
 			name = Sample;
 			packageProductDependencies = (
-				369ED7DE2C6C13EC00198974 /* OpenDesignSystem */,
-				369ED7E12C6C141C00198974 /* OpenDesignSystem */,
 			);
 			productName = Sample;
 			productReference = 362F57E02C4308E5006537F7 /* Sample.app */;
@@ -123,6 +120,7 @@
 			);
 			mainGroup = 362F57D72C4308E5006537F7;
 			packageReferences = (
+				363868B32C77E6D400FA6FEA /* XCLocalSwiftPackageReference "../OpenDesignSystem" */,
 			);
 			productRefGroup = 362F57E12C4308E5006537F7 /* Products */;
 			projectDirPath = "";
@@ -151,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				363868B72C77F25E00FA6FEA /* OpenDSGenerated.swift in Sources */,
 				362F57E62C4308E5006537F7 /* ContentView.swift in Sources */,
 				362F57E42C4308E5006537F7 /* SampleApp.swift in Sources */,
 			);
@@ -357,16 +356,12 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCSwiftPackageProductDependency section */
-		369ED7DE2C6C13EC00198974 /* OpenDesignSystem */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = OpenDesignSystem;
+/* Begin XCLocalSwiftPackageReference section */
+		363868B32C77E6D400FA6FEA /* XCLocalSwiftPackageReference "../OpenDesignSystem" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../OpenDesignSystem;
 		};
-		369ED7E12C6C141C00198974 /* OpenDesignSystem */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = OpenDesignSystem;
-		};
-/* End XCSwiftPackageProductDependency section */
+/* End XCLocalSwiftPackageReference section */
 	};
 	rootObject = 362F57D82C4308E5006537F7 /* Project object */;
 }
